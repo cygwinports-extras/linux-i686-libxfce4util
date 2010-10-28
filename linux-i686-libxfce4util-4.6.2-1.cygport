@@ -1,0 +1,6 @@
+CROSS_HOST="i686-pc-linux-gnu"
+ORIG_PN="libxfce4util"
+inherit cross xfce4
+
+# circumvent runtime test
+CYGCONF_ARGS="--with-broken-putenv"
